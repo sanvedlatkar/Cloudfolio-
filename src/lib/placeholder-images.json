@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "headshot",
+      "description": "Professional headshot",
+      "imageUrl": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjU3ODkzMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "project-lead-capture",
+      "description": "Abstract visualization of data capture or a serverless function icon.",
+      "imageUrl": "https://images.unsplash.com/photo-1685034759882-34583cece8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYXRhJTIwZmxvd3xlbnwwfHx8fDE3NjU4NzExMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data flow"
+    },
+    {
+      "id": "project-iot-printer",
+      "description": "A modern printer with IoT connectivity symbols around it.",
+      "imageUrl": "https://images.unsplash.com/photo-1650696868612-4b836291b323?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpb3QlMjBwcmludGVyfGVufDB8fHx8MTc2NTkwNjY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "iot printer"
+    },
+    {
+      "id": "project-wordpress",
+      "description": "Diagram showing a web server connecting to a database, with the WordPress logo.",
+      "imageUrl": "https://images.unsplash.com/photo-1555941781-ef88064c948f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY1OTA2NjQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web architecture"
+    },
+    {
+      "id": "project-3-tier-app",
+      "description": "A clear architectural diagram of a 3-tier web application.",
+      "imageUrl": "https://images.unsplash.com/photo-1716108630243-b2b8ee23720a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbG91ZCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NjU5MDY2NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud architecture"
+    },
+    {
+      "id": "about-image",
+      "description": "A person working on a laptop in a modern office or a close-up of code on a screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzODkyfDB8MXxjb2xsZWN0aW9ufDF8MXxjb2Rpbmd8ZW58MHx8fHwxNjA5NTU2NDc5&ixlib=rb-1.2.1&q=80&w=1080",
+      "imageHint": "coding programming"
+    }
+  ]
+}
