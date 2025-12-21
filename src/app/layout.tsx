@@ -44,6 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* ✅ FAVICONS (FORCE BLUE LOGO) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        {/* ✅ FONTS */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -55,6 +61,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+
       <body className={cn("min-h-screen bg-background font-body antialiased")}>
         <ThemeProvider>
           <div className="relative flex min-h-dvh flex-col bg-background">

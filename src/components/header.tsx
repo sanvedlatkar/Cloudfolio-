@@ -37,9 +37,12 @@ export function Header() {
     >
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Cloud className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg font-bold">Cloudfolio</span>
-        </Link>
+  <Cloud className="h-6 w-6 text-primary" />
+  <span className="font-headline text-lg font-bold">
+    Cloudfolio <span className="text-muted-foreground">| Sanved</span>
+  </span>
+</Link>
+
         
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
