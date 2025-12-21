@@ -1,54 +1,26 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { cn } from '@/lib/utils';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { Toaster } from '@/components/ui/toaster';
-
 export const metadata: Metadata = {
-  title: 'Cloudfolio | Sanved',
-  description: 'A world-class portfolio for a Cloud Enthusiast.',
+  title: "Cloudfolio | Sanved",
+  description: "A world-class portfolio for a Cloud Enthusiast.",
+  metadataBase: new URL("https://www.sslinfo.xyz"),
+  openGraph: {
+    title: "Cloudfolio | Sanved",
+    description: "A world-class portfolio for a Cloud Enthusiast.",
+    url: "https://www.sslinfo.xyz",
+    siteName: "Cloudfolio | Sanved",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cloudfolio | Sanved – Cloud Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cloudfolio | Sanved",
+    description: "A world-class portfolio for a Cloud Enthusiast.",
+    images: ["/og-image.png"],
+  },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* FAVICON */}
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-
-        {/* FONTS */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Source+Code+Pro&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body
-        className={cn(
-          'min-h-screen bg-background font-body antialiased'
-        )}
-      >
-        <ThemeProvider>
-          <div className="relative flex min-h-dvh flex-col bg-background">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-          <Toaster />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
-}
