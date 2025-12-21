@@ -7,19 +7,21 @@ import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sslinfo.xyz"),
+
   title: "Cloudfolio | Sanved — Cloud Engineer Portfolio",
   description:
-    "Cloudfolio is my personal portfolio showcasing cloud engineering projects, AWS deployments, CI/CD pipelines, and DevOps experience.",
-  metadataBase: new URL("https://www.sslinfo.xyz"),
+    "Cloudfolio is my cloud engineering portfolio showcasing AWS, S3, CloudFront, CI/CD pipelines, and real-world DevOps projects.",
+
   openGraph: {
-    title: "Cloudfolio | Sanved — Cloud Engineer Portfolio",
+    title: "Cloudfolio | Sanved",
     description:
-      "A production-grade cloud portfolio showcasing AWS, CloudFront, S3, CI/CD pipelines, and real-world cloud engineering projects.",
+      "A production-grade cloud portfolio built using AWS S3, CloudFront, HTTPS, and CI/CD.",
     url: "https://www.sslinfo.xyz",
     siteName: "Cloudfolio | Sanved",
     images: [
       {
-        url: "https://www.sslinfo.xyz/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Cloudfolio | Sanved – Cloud Engineer Portfolio",
@@ -27,12 +29,13 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Cloudfolio | Sanved — Cloud Engineer Portfolio",
+    title: "Cloudfolio | Sanved",
     description:
-      "AWS-powered cloud portfolio with CI/CD, CloudFront, S3, and secure HTTPS deployment.",
-    images: ["https://www.sslinfo.xyz/og-image.png"],
+      "AWS-powered cloud portfolio with S3, CloudFront, CI/CD, and secure HTTPS deployment.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -44,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Fonts only — favicon handled by Next.js App Router */}
+        {/* Fonts only — favicon is handled automatically by Next.js App Router */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
