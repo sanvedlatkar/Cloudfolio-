@@ -44,12 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ FAVICONS (FORCE BLUE LOGO) */}
-        <link rel="icon" href="/favicon-blue.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-        {/* ✅ FONTS */}
+        {/* Fonts only — favicon handled by Next.js App Router */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
