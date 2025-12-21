@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  trailingSlash: true, // REQUIRED for S3 folder routing
 };
 
 export default nextConfig;
